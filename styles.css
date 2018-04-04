@@ -1,0 +1,30 @@
+table {
+  position: relative;
+  padding: .2em .5em;
+  margin: .2em 0 0;
+  border: 0px;
+}
+
+th {
+  background: #ddd;
+}
+
+.left {
+  min-width: 250px;
+  width: 66.67%;
+  max-width: 500px;
+  border-radius: .3em 0 0 0;
+  text-align: center;
+}
+
+.right {
+  min-width: 150px;
+  width: 33.33%;
+  max-width: 300px;
+  border-radius: 0 .3em 0 0;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
