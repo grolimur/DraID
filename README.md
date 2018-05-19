@@ -1,4 +1,4 @@
 # DraID
-Simple tool to get information from a DOI (Digital Object Identifier), based on the CrossRef API.
+Simple tool to know what registration agency provided a specific DOI (Digital Object Identifier)
 
-The first (and yet only) purpose of this tool is to know what registration agency provided a specific DOI.
+DraID is based on the CrossRef API.
