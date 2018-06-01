@@ -12,14 +12,18 @@
   <br/>
   <?php
 
-  $d = $_GET[d];
-  $a = preg_split("/[\r\s]+/", $d);
-  $count = count($a);
+  $dirtyDoiList = $_GET[d];
+  // clean DOI list (removing empty lines)
+  $cleanDoiList = preg_replace("/[\r\n]+/", " ", $dirtyDoiList);
+  // Split DOI list in an array to be processed
+  $doiArray = preg_split("/[\r\s\n]+/", $cleanDoiList);
+  $count = count($doiArray);
   print '<table>
   <tr><th class="left">DOI</th><th class="right">Registration Agency</th></tr>
   ';
+  // process provided DOI and display related registration agency
   for($i=0;$i<$count;$i++) {
-    $url = 'https://api.crossref.org/works/'.$a[$i].'/agency';
+    $url = 'https://api.crossref.org/works/'.$doiArray[$i].'/agency';
     $c = curl_init();
     curl_setopt($c, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
@@ -28,14 +32,14 @@
     curl_close($c);
     $doi = json_decode($curl, true);
     print
-    '<tr><td>'.$a[$i].'</td><td>'.$doi["message"]["agency"]["label"].
+    '<tr><td>'.$doiArray[$i].'</td><td>'.$doi["message"]["agency"]["label"].
     '</td></tr>';
   }
   print '</table>';
   ?>
 
   <hr/>
-  <i>DraID by grolimur - v0.1 - April 5, 2018</i><br/>
+  <i>DraID by grolimur - v0.1.1 - June 1, 2018</i><br/>
   released under MIT License on <a href="https://github.com/grolimur/DraID" target="_blank">Github</a>
 </body>
 </html>
