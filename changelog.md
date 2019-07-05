@@ -1,5 +1,8 @@
 # DraID changelog
 
+### [1.06.2018] `0.1.2`   
+**info added**: demo link added in README.md
+
 ### [1.06.2018] `0.1.1`   
 **feature added**: removes empty lines from a list of DOIs
 

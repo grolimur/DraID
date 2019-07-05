@@ -39,7 +39,7 @@
   ?>
 
   <hr/>
-  <i>DraID by grolimur - v0.1.1 - June 1, 2018</i><br/>
+  <i>DraID by grolimur - v0.1.2 - July 5, 2019</i><br/>
   released under MIT License on <a href="https://github.com/grolimur/DraID" target="_blank">Github</a>
 </body>
 </html>
