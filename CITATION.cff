@@ -1,0 +1,10 @@
+cff-version: 1.0.3
+message: If you use this software, please cite it as below.
+authors:
+  - family-names: Grolimund
+    given-names: Raphaël
+    orcid: https://orcid.org/0000-0002-8047-9888
+title: DraID
+version: 0.1.2
+date-released: 2019-07-05
+repository-code: https://github.com/grolimur/DraID
