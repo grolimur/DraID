@@ -1,7 +1,7 @@
 # DraID changelog
 
-### [1.06.2018] `0.1.2`   
-**info added**: demo link added in README.md
+### [19.12.2020] `0.1.2`   
+**update**: url now contains `mailto` parameter as requested by CrossRef
 
 ### [1.06.2018] `0.1.1`   
 **feature added**: removes empty lines from a list of DOIs

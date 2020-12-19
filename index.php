@@ -12,7 +12,7 @@
   <br/>
   <?php
 
-  $dirtyDoiList = $_GET[d];
+  $dirtyDoiList = $_GET['d'];
   // clean DOI list (removing empty lines)
   $cleanDoiList = preg_replace("/[\r\n]+/", " ", $dirtyDoiList);
   // Split DOI list in an array to be processed
@@ -23,7 +23,7 @@
   ';
   // process provided DOI and display related registration agency
   for($i=0;$i<$count;$i++) {
-    $url = 'https://api.crossref.org/works/'.$doiArray[$i].'/agency';
+    $url = 'https://api.crossref.org/works/'.$doiArray[$i].'/agency/?mailto:grolimur@nous4.ch';
     $c = curl_init();
     curl_setopt($c, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
@@ -39,7 +39,7 @@
   ?>
 
   <hr/>
-  <i>DraID by grolimur - v0.1.2 - July 5, 2019</i><br/>
+  <i>DraID by grolimur - v0.1.2 - December 19, 2020</i><br/>
   released under MIT License on <a href="https://github.com/grolimur/DraID" target="_blank">Github</a>
 </body>
 </html>
