@@ -6,25 +6,36 @@ table {
 }
 
 th {
-  background: #ddd;
+  background: #ccc;
 }
 
 .left {
-  min-width: 250px;
-  width: 66.67%;
-  max-width: 500px;
+  /*min-width: 200px;
+  width: 50%;
+  max-width: 200px;*/
   border-radius: .3em 0 0 0;
   text-align: center;
 }
 
+.center {
+  /*min-width: 100px;
+  width: 25%;
+  max-width: 100px;*/
+  border-radius: 0 .3em 0 0;
+  text-align: center;
+}
 .right {
-  min-width: 150px;
-  width: 33.33%;
-  max-width: 300px;
+  /*min-width: 100px;
+  width: 25%;
+  max-width: 100px;*/
   border-radius: 0 .3em 0 0;
   text-align: center;
 }
 
-td {
+/*td {
   text-align: center;
+}*/
+
+tr:nth-child(odd) {
+  background-color: #eee;
 }

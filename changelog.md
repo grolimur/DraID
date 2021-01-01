@@ -1,5 +1,8 @@
 # DraID changelog
 
+### [1.01.2021] `0.1.3`   
+**update**: [CrossRef DOI only] now returns link to CrossRef member to know who the DOI prefix belongs to
+
 ### [19.12.2020] `0.1.2`   
 **update**: url now contains `mailto` parameter as requested by CrossRef
 
