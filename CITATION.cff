@@ -5,7 +5,6 @@ authors:
     orcid: "https://orcid.org/0000-0002-8047-9888"
 cff-version: "1.1.0"
 date-released: 2021-01-01
-identifiers: 
 license: "MIT License"
 message: "If you use this software, please cite it using these metadata."
 repository-code: "https://github.com/grolimur/DraID"
